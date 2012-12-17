@@ -25,7 +25,7 @@ class Chef::Recipe::IPManagement
       end
     end
 
-    error = "Can't find address on network #{network} for node"
+    error = "Can't find address on network #{network} for node #{node}"
     Chef::Log.error(error)
     raise error
   end
